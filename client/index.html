@@ -82,7 +82,7 @@ footer{border-top:2px solid var(--line2);padding:30px 0 50px;color:var(--mut);fo
   <a class="logo" href="/"><svg width="28" height="28" viewBox="0 0 32 32"><ellipse cx="16" cy="17" rx="11" ry="13" fill="#fff4d6" stroke="#ff6ea9" stroke-width="2"/><path d="M9 14 l3 3 l-3 3 M23 14 l-3 3 l3 3" stroke="#2a2320" stroke-width="2" fill="none"/></svg>BR<b>EED</b></a>
   <div class="spacer"></div>
   <a class="btn btn-ghost" href="/docs">Docs</a>
-  <a class="btn btn-ghost" href="https://x.com/BreedProtocol" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41Z"/></svg></a>
+  <a class="btn btn-ghost" href="https://x.com/BreedOnRH" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41Z"/></svg></a>
   <a class="btn btn-pink" href="/app">Open the App →</a>
 </div></header>
 <div id="caBar" style="display:none;background:var(--ink);color:var(--bg);padding:10px 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:13px"><span style="color:var(--pink);font-weight:700">$BREED CA</span> &nbsp;<span id="caTxt" style="letter-spacing:.02em"></span> &nbsp;<button onclick="navigator.clipboard.writeText(document.getElementById(&quot;caTxt&quot;).textContent);this.textContent=&quot;copied ✓&quot;" style="background:var(--pink);color:#fff;border:0;border-radius:999px;padding:3px 14px;font-weight:700;cursor:pointer;font-family:inherit;font-size:12px">copy</button></div>
@@ -138,7 +138,7 @@ footer{border-top:2px solid var(--line2);padding:30px 0 50px;color:var(--mut);fo
   <div class="spacer"></div>
   <a href="/docs">Docs</a>
   <a href="/app">App</a>
-  <a href="https://x.com/BreedProtocol" target="_blank" rel="noopener">X</a>
+  <a href="https://x.com/BreedOnRH" target="_blank" rel="noopener">X</a>
 </div></footer>
 <script>fetch("/api/config").then(r=>r.json()).then(c=>{if(c.mint){document.getElementById("caTxt").textContent=c.mint;document.getElementById("caBar").style.display="block";}}).catch(()=>{});</script>
 </body>

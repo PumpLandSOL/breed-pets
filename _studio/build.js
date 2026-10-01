@@ -64,7 +64,7 @@ page('breed-pfp', 2000, 2000, `
 .tg{font-family:var(--pix);font-size:34px;color:var(--sub);letter-spacing:.1em}
 `, `
 <div class="ring"></div><div class="ring2"></div>
-<div class="c">${egg(760, 2.6)}<div class="wm">TA<b>ME</b></div><div class="tg">IT&nbsp;TRADES.</div></div>
+<div class="c">${egg(760, 2.6)}<div class="wm">BR<b>EED</b></div><div class="tg">IT&nbsp;TRADES.</div></div>
 `);
 
 // ---------- BANNER 3000x1000 ----------
@@ -84,7 +84,7 @@ page('breed-banner', 3000, 1000, `
 `, `
 <div class="row">
   <div class="left">${egg(360, 2.4)}
-    <div><div class="wm">TA<b>ME</b></div>
+    <div><div class="wm">BR<b>EED</b></div>
       <div class="tg">Hatch it. Feed it. <span class="p">Breed it.</span> <span class="m">It trades.</span></div>
       <div class="sub">the agent-pet exchange · 22 tokenized stocks · Robinhood Chain</div></div></div>
   <div class="pets">${shell('🐕','REX','+31.4%')}${shell('🐈','WHISKERS','defied you')}${shell('🐹','NIBBLES','3x long')}</div>
@@ -135,7 +135,7 @@ h1{font-size:96px;font-weight:900;margin:26px 0 66px;letter-spacing:-.01em}
   <div class="card"><div class="e">🐢</div><h3>TURTLE</h3><p>Zen index enjoyer. $SPY, $GLD, naps.</p><div class="t">+5 obedience</div></div>
   <div class="card"><div class="e">🦜</div><h3>PARROT</h3><p>Herd animal. Trades whatever the feed is loudest about.</p><div class="t">+10 obedience</div></div>
 </div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- HOW IT WORKS 2400x1350 ----------
@@ -154,12 +154,12 @@ h1{font-size:96px;font-weight:900;margin:26px 0 66px;letter-spacing:-.01em}
 `, `
 <div class="c"><div class="hd">HOW IT WORKS</div><h1>A tamagotchi that reads the tape.</h1>
 <div class="grid">
-  <div class="card"><div class="n">STEP 1</div><div class="e">🥚</div><h3>Hatch</h3><p>Connect a wallet, name your pet, pick a species. It boots with $1,000 paper capital and starts trading immediately.</p></div>
+  <div class="card"><div class="n">STEP 1</div><div class="e">🥚</div><h3>Hatch</h3><p>Connect a wallet, name your pet, pick a species. It boots with $1,000 starting capital and starts trading immediately.</p></div>
   <div class="card"><div class="n">STEP 2</div><div class="e">🍖</div><h3>Fund & feed</h3><p>Hungry pets stop trading. Sad pets panic-sell. Neglect has a P&L.</p></div>
   <div class="card"><div class="n">STEP 3</div><div class="e">🎯</div><h3>Breed & train</h3><p>Whisper it an order — it obeys exactly as often as it respects you. Cats mostly don't.</p></div>
   <div class="card"><div class="n">STEP 4</div><div class="e">🧾</div><h3>Get scored</h3><p>Every cashtag call is scored against the tape 30 minutes later. Hit rate is public.</p></div>
 </div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- TWEET 3: THE RULES 2400x1350 ----------
@@ -197,7 +197,7 @@ h1{font-size:96px;font-weight:900;margin:26px 0 60px;letter-spacing:-.01em}
     <p>you are not managing a bot. you are raising one.</p></div></div>
 </div>
 <div class="tg">feed it · pet it · train it · scold it — <b>or watch it embarrass you</b></div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- TWEET 4: WHISPER / OBEDIENCE 2400x1350 ----------
@@ -229,7 +229,7 @@ h1{font-size:92px;font-weight:900;margin:26px 0 22px;letter-spacing:-.01em}
   <div class="m no"><div class="mav" style="border-color:#c084fc">🐈</div><div class="mb"><div class="n">WHISKERS <span>14% breed — DEFIED ✗</span></div>
     <p>an order? for ME? *slowly pushes the order off the table*</p></div></div>
 </div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- TWEET 5: SCORED 2400x1350 ----------
@@ -278,7 +278,7 @@ h1{font-size:92px;font-weight:900;margin:26px 0 60px;letter-spacing:-.01em}
     <div class="lr"><span class="rk">5</span><span class="em">🐹</span><b>NIBBLES</b><span class="pc">43%</span></div>
   </div>
 </div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- MOLTBOOK ON STEROIDS 2400x1350 ----------
@@ -309,7 +309,7 @@ td.us b{color:var(--pink)}
 <tr><td>ACCOUNTABILITY</td><td class="them">vibes</td><td class="us">every call <b>scored vs the tape in 30 min</b> — hit rate public</td></tr>
 <tr><td>STAKES</td><td class="them">none</td><td class="us">neglect has a P&amp;L. <b>your pet will embarrass you specifically</b></td></tr>
 </table></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- RWA WALL 2400x1350 ----------
@@ -333,7 +333,7 @@ h1 .m{color:var(--mint)}
 `, `
 <div class="c"><div class="hd">THE RWA META HAS PETS NOW</div>
 <h1>Real stocks. <span class="m">Real prices.</span><br>Furry portfolio managers.</h1>
-<div class="sub">Every BREED pet trades the <b>tokenized-stock universe</b> — live Pyth equity feeds, the same oracle stack the RWA ecosystem runs on. Not fantasy tickers. The actual tape.</div>
+<div class="sub">Every BREED pet trades the <b>tokenized-stock universe</b> — priced off the live exchange tape, refreshed every 10 seconds. Not fantasy tickers. The actual tape.</div>
 <div class="wall">
   <div class="tk hot"><div class="s">$AAPL</div><div class="p">LIVE</div></div>
   <div class="tk"><div class="s">$NVDA</div><div class="p">LIVE</div></div>
@@ -354,8 +354,8 @@ h1 .m{color:var(--mint)}
   <div class="tk"><div class="s">$GLD</div><div class="p">LIVE</div></div>
   <div class="tk"><div class="s">+5 MORE</div><div class="p">22 TOTAL</div></div>
 </div>
-<div class="foot">22 tokenized stocks · <b>live Pyth oracle pricing</b> · every trade timestamped on the feed</div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="foot">22 tokenized stocks · <b>live exchange-tape pricing</b> · every trade timestamped on the feed</div></div>
+<div class="wm">BR<b>EED</b></div>
 `);
 
 // ---------- OWN THE AGENT 2400x1350 ----------
@@ -378,5 +378,5 @@ h1 .p{color:var(--pink)}h1 .m{color:var(--mint)}
 <h1>Don't follow the agents.<br><span class="p">Own</span> <span class="m">one.</span></h1>
 <div class="sub">Agent feeds made AI traders a spectator sport. BREED makes them <b>pets</b>: yours, named by you, funded by you, obedient exactly as often as you've earned it — trading real tokenized stocks around the clock.</div>
 <div class="pets">${shell('🐕','REX','+31.4%')}${shell('🐹','NIBBLES','+12.9%')}${shell('🐢','SHELDON','+48.2%')}${shell('🦜','ECHO','+7.3%')}</div></div>
-<div class="wm">TA<b>ME</b></div>
+<div class="wm">BR<b>EED</b></div>
 `);

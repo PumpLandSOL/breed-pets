@@ -6,7 +6,7 @@ const os = require('os');
 const { spawnSync } = require('child_process');
 
 const OUT = path.join(__dirname, 'out');
-const DESKTOP = 'C:/Users/efrai/OneDrive/Desktop';
+const DESKTOP = path.join(__dirname, '..', 'brand'); fs.mkdirSync(DESKTOP, { recursive: true });
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 
 const SIZES = {

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1280px;height:720px;overflow:hidden;position:relative;background:#fdf6e9;color:#2a2320;font-family:'Onest',sans-serif}
+.bgp{position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,110,169,.05) 0 14px,transparent 14px 28px)}
+.blob{position:absolute;width:700px;height:700px;border-radius:50%;filter:blur(120px);opacity:.35}
+.pix{font-family:'Press Start 2P',monospace}
+.p{color:#ff6ea9}.m{color:#28c48a}
+.c{position:absolute;inset:0;display:grid;place-items:center;text-align:center}
+.card{background:#fffdf6;border:2px solid rgba(255,110,169,.35);border-radius:18px;box-shadow:0 6px 0 rgba(42,35,32,.08)}
