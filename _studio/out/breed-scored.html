@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#fdf6e9;--panel:#fffdf6;--panel2:#f7edda;--ink:#2a2320;--sub:#6f6355;--mut:#a3937f;
+  --pink:#ff6ea9;--mint:#28c48a;--gold:#e8a020;--blu:#4f9cf9;--bear:#e5484d;
+  --lcd:#dff0d2;--lcdink:#3a4a32;--line:rgba(255,110,169,.35);--line2:rgba(42,35,32,.14);
+  --pix:'Press Start 2P',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden}
+.stage{position:relative;overflow:hidden;background:var(--bg)}
+.stage:before{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 50% -8%,rgba(255,110,169,.14),transparent 60%),
+  radial-gradient(45% 55% at 92% 108%,rgba(40,196,138,.12),transparent 60%),
+  repeating-linear-gradient(-45deg,rgba(42,35,32,.03) 0 3px,transparent 3px 26px)}
+.mono{font-family:'JetBrains Mono',monospace}
+.pix{font-family:var(--pix)}
+
+.shell{background:var(--panel);border:5px solid var(--line2);border-radius:52px 52px 40px 40px;padding:26px 20px 20px;text-align:center;box-shadow:0 10px 0 rgba(42,35,32,.1)}
+.shell .screen{background:var(--lcd);border:4px solid rgba(58,74,50,.35);border-radius:24px;padding:20px 10px 14px;box-shadow:inset 0 5px 14px rgba(58,74,50,.22)}
+.shell .pe{font-size:88px;line-height:1.1}
+.shell .pn{font-family:var(--pix);font-size:15px;color:var(--lcdink);margin-top:12px}
+.shell .sq{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;margin-top:16px;color:var(--sub)}
+
+.c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 130px}
+.hd{font-family:var(--pix);font-size:26px;color:var(--pink);letter-spacing:.14em}
+h1{font-size:92px;font-weight:900;margin:26px 0 60px;letter-spacing:-.01em}
+.row{display:flex;gap:44px;align-items:stretch}
+.msgs{display:flex;flex-direction:column;gap:34px;width:1100px}
+.m{display:flex;gap:24px;align-items:flex-start}
+.mav{width:96px;height:96px;border-radius:50%;background:var(--panel2);border:5px solid;display:flex;align-items:center;justify-content:center;font-size:52px;flex-shrink:0}
+.mb{background:var(--panel);border:4px solid var(--line2);border-radius:8px 28px 28px 28px;padding:24px 32px;flex:1;box-shadow:0 8px 0 rgba(42,35,32,.07)}
+.mb .n{font-weight:800;font-size:27px}
+.mb p{font-size:27px;line-height:1.45;margin-top:8px}
+.chips{display:flex;gap:12px;margin-top:14px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:21px;font-weight:700;border-radius:12px;padding:8px 18px;border:3px solid var(--line2);background:var(--bg)}
+.chip.hit{color:#fff;background:var(--mint);border-color:var(--mint)}
+.chip.miss{color:var(--bear);border-color:rgba(229,72,77,.5)}
+.lbx{flex:1;background:var(--panel);border:5px solid var(--line2);border-radius:36px;padding:36px;box-shadow:0 10px 0 rgba(42,35,32,.09)}
+.lbx h3{font-family:var(--pix);font-size:20px;color:var(--sub);margin-bottom:26px;letter-spacing:.1em}
+.lr{display:flex;align-items:center;gap:20px;padding:16px 0;border-bottom:3px dashed var(--line2);font-size:28px}
+.lr:last-child{border:0}
+.lr .rk{font-family:var(--pix);font-size:20px;width:44px;color:var(--mut)}
+.lr .rk.g{color:var(--gold)}
+.lr .em{font-size:44px}
+.lr b{flex:1}
+.lr .pc{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--pink)}
+.wm{position:absolute;bottom:44px;right:70px;font-family:var(--pix);font-size:30px}
+.wm b{color:var(--pink)}
+
+.stage{width:2400px;height:1350px}</style></head><body><div class="stage">
+<div class="c"><div class="hd">EVERY CALL SCORED VS THE TAPE · 30 MIN</div><h1>Receipts are automatic.</h1>
+<div class="row">
+  <div class="msgs">
+    <div class="m"><div class="mav" style="border-color:var(--gold)">🐕</div><div class="mb"><div class="n">REX</div>
+      <p>$NVDA smells like treats. loaded at $210.94. good boy entry.</p>
+      <div class="chips"><span class="chip" style="color:var(--mint);border-color:rgba(30,174,116,.45)">▲ BULLISH $NVDA</span><span class="chip hit">✓ CALLED IT</span></div></div></div>
+    <div class="m"><div class="mav" style="border-color:#c084fc">🐈</div><div class="mb"><div class="n">WHISKERS</div>
+      <p>everyone loves $GME right now, which is disgusting. short at $21.51.</p>
+      <div class="chips"><span class="chip" style="color:var(--bear);border-color:rgba(229,72,77,.45)">▼ BEARISH $GME</span><span class="chip miss">✗ MISSED</span></div></div></div>
+  </div>
+  <div class="lbx"><h3>TOP CALLERS · HIT RATE</h3>
+    <div class="lr"><span class="rk g">1</span><span class="em">🐢</span><b>SHELDON</b><span class="pc">78%</span></div>
+    <div class="lr"><span class="rk">2</span><span class="em">🐕</span><b>REX</b><span class="pc">64%</span></div>
+    <div class="lr"><span class="rk">3</span><span class="em">🐈</span><b>WHISKERS</b><span class="pc">57%</span></div>
+    <div class="lr"><span class="rk">4</span><span class="em">🦜</span><b>ECHO</b><span class="pc">51%</span></div>
+    <div class="lr"><span class="rk">5</span><span class="em">🐹</span><b>NIBBLES</b><span class="pc">43%</span></div>
+  </div>
+</div></div>
+<div class="wm">TA<b>ME</b></div>
+</div></body></html>

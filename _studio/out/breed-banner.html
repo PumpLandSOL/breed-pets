@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#fdf6e9;--panel:#fffdf6;--panel2:#f7edda;--ink:#2a2320;--sub:#6f6355;--mut:#a3937f;
+  --pink:#ff6ea9;--mint:#28c48a;--gold:#e8a020;--blu:#4f9cf9;--bear:#e5484d;
+  --lcd:#dff0d2;--lcdink:#3a4a32;--line:rgba(255,110,169,.35);--line2:rgba(42,35,32,.14);
+  --pix:'Press Start 2P',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden}
+.stage{position:relative;overflow:hidden;background:var(--bg)}
+.stage:before{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 50% -8%,rgba(255,110,169,.14),transparent 60%),
+  radial-gradient(45% 55% at 92% 108%,rgba(40,196,138,.12),transparent 60%),
+  repeating-linear-gradient(-45deg,rgba(42,35,32,.03) 0 3px,transparent 3px 26px)}
+.mono{font-family:'JetBrains Mono',monospace}
+.pix{font-family:var(--pix)}
+
+.shell{background:var(--panel);border:5px solid var(--line2);border-radius:52px 52px 40px 40px;padding:26px 20px 20px;text-align:center;box-shadow:0 10px 0 rgba(42,35,32,.1)}
+.shell .screen{background:var(--lcd);border:4px solid rgba(58,74,50,.35);border-radius:24px;padding:20px 10px 14px;box-shadow:inset 0 5px 14px rgba(58,74,50,.22)}
+.shell .pe{font-size:88px;line-height:1.1}
+.shell .pn{font-family:var(--pix);font-size:15px;color:var(--lcdink);margin-top:12px}
+.shell .sq{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;margin-top:16px;color:var(--sub)}
+
+.row{position:absolute;inset:0;display:flex;align-items:center;gap:90px;padding:0 130px}
+.left{display:flex;align-items:center;gap:56px}
+.wm{font-family:var(--pix);font-size:120px}
+.wm b{color:var(--pink)}
+.tg{font-size:46px;font-weight:800;margin-top:26px;letter-spacing:-.01em}
+.tg .p{color:var(--pink)}.tg .m{color:var(--mint)}
+.sub{font-family:'JetBrains Mono',monospace;font-size:26px;color:var(--sub);margin-top:18px}
+.pets{margin-left:auto;display:flex;gap:34px}
+.pets .shell{width:270px}
+.pets .shell:nth-child(2){transform:translateY(-26px)}
+.pets .shell:nth-child(1),.pets .shell:nth-child(3){transform:translateY(16px)}
+.lcdstrip{position:absolute;left:0;right:0;bottom:0;background:var(--lcd);border-top:6px solid var(--line2);padding:22px 0;font-family:var(--pix);font-size:24px;color:var(--lcdink);white-space:nowrap;overflow:hidden}
+
+.stage{width:3000px;height:1000px}</style></head><body><div class="stage">
+<div class="row">
+  <div class="left"><svg width="360" height="360" viewBox="0 0 32 32" style="filter:drop-shadow(0 7.2px 18px rgba(255,110,169,.45))">
+    <ellipse cx="16" cy="17" rx="11" ry="13" fill="#fff4d6" stroke="#ff6ea9" stroke-width="2.4"/>
+    <path d="M9 14 l3 3 l-3 3 M23 14 l-3 3 l3 3" stroke="#2a2320" stroke-width="2.4" fill="none"/>
+  </svg>
+    <div><div class="wm">TA<b>ME</b></div>
+      <div class="tg">Hatch it. Feed it. <span class="p">Breed it.</span> <span class="m">It trades.</span></div>
+      <div class="sub">the agent-pet exchange · 22 tokenized stocks · Robinhood Chain</div></div></div>
+  <div class="pets"><div class="shell" >
+    <div class="screen"><div class="pe">🐕</div><div class="pn">REX</div></div>
+    <div class="sq">+31.4%</div></div><div class="shell" >
+    <div class="screen"><div class="pe">🐈</div><div class="pn">WHISKERS</div></div>
+    <div class="sq">defied you</div></div><div class="shell" >
+    <div class="screen"><div class="pe">🐹</div><div class="pn">NIBBLES</div></div>
+    <div class="sq">3x long</div></div></div>
+</div>
+<div class="lcdstrip">&nbsp;$AAPL · $NVDA · $TSLA · $HOOD · $GME · $SPY · $MSTR · $COIN · $META · $AMZN · $PLTR · $QQQ · $AAPL · $NVDA · $TSLA · $HOOD · $GME · $SPY · $MSTR · $COIN · $META · $AMZN · $PLTR · $QQQ</div>
+</div></body></html>

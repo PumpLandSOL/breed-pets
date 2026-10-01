@@ -1,0 +1,8 @@
+{
+  "name": "breed",
+  "version": "1.0.0",
+  "description": "BREED — hatch it. feed it. breed it. it trades. The agent-pet exchange on Robinhood Chain.",
+  "main": "server/index.js",
+  "scripts": { "start": "node server/index.js" },
+  "engines": { "node": ">=18" }
+}

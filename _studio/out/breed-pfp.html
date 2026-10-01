@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#fdf6e9;--panel:#fffdf6;--panel2:#f7edda;--ink:#2a2320;--sub:#6f6355;--mut:#a3937f;
+  --pink:#ff6ea9;--mint:#28c48a;--gold:#e8a020;--blu:#4f9cf9;--bear:#e5484d;
+  --lcd:#dff0d2;--lcdink:#3a4a32;--line:rgba(255,110,169,.35);--line2:rgba(42,35,32,.14);
+  --pix:'Press Start 2P',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden}
+.stage{position:relative;overflow:hidden;background:var(--bg)}
+.stage:before{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 50% -8%,rgba(255,110,169,.14),transparent 60%),
+  radial-gradient(45% 55% at 92% 108%,rgba(40,196,138,.12),transparent 60%),
+  repeating-linear-gradient(-45deg,rgba(42,35,32,.03) 0 3px,transparent 3px 26px)}
+.mono{font-family:'JetBrains Mono',monospace}
+.pix{font-family:var(--pix)}
+
+.shell{background:var(--panel);border:5px solid var(--line2);border-radius:52px 52px 40px 40px;padding:26px 20px 20px;text-align:center;box-shadow:0 10px 0 rgba(42,35,32,.1)}
+.shell .screen{background:var(--lcd);border:4px solid rgba(58,74,50,.35);border-radius:24px;padding:20px 10px 14px;box-shadow:inset 0 5px 14px rgba(58,74,50,.22)}
+.shell .pe{font-size:88px;line-height:1.1}
+.shell .pn{font-family:var(--pix);font-size:15px;color:var(--lcdink);margin-top:12px}
+.shell .sq{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;margin-top:16px;color:var(--sub)}
+
+.c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px}
+.ring{position:absolute;inset:70px;border:14px solid var(--pink);border-radius:50%;opacity:.9}
+.ring2{position:absolute;inset:120px;border:6px dashed rgba(42,35,32,.25);border-radius:50%}
+.wm{font-family:var(--pix);font-size:150px;letter-spacing:.04em}
+.wm b{color:var(--pink)}
+.tg{font-family:var(--pix);font-size:34px;color:var(--sub);letter-spacing:.1em}
+
+.stage{width:2000px;height:2000px}</style></head><body><div class="stage">
+<div class="ring"></div><div class="ring2"></div>
+<div class="c"><svg width="760" height="760" viewBox="0 0 32 32" style="filter:drop-shadow(0 15.200000000000001px 38px rgba(255,110,169,.45))">
+    <ellipse cx="16" cy="17" rx="11" ry="13" fill="#fff4d6" stroke="#ff6ea9" stroke-width="2.6"/>
+    <path d="M9 14 l3 3 l-3 3 M23 14 l-3 3 l3 3" stroke="#2a2320" stroke-width="2.6" fill="none"/>
+  </svg><div class="wm">TA<b>ME</b></div><div class="tg">IT&nbsp;TRADES.</div></div>
+</div></body></html>

@@ -1,0 +1,52 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#fdf6e9;--panel:#fffdf6;--panel2:#f7edda;--ink:#2a2320;--sub:#6f6355;--mut:#a3937f;
+  --pink:#ff6ea9;--mint:#28c48a;--gold:#e8a020;--blu:#4f9cf9;--bear:#e5484d;
+  --lcd:#dff0d2;--lcdink:#3a4a32;--line:rgba(255,110,169,.35);--line2:rgba(42,35,32,.14);
+  --pix:'Press Start 2P',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden}
+.stage{position:relative;overflow:hidden;background:var(--bg)}
+.stage:before{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 50% -8%,rgba(255,110,169,.14),transparent 60%),
+  radial-gradient(45% 55% at 92% 108%,rgba(40,196,138,.12),transparent 60%),
+  repeating-linear-gradient(-45deg,rgba(42,35,32,.03) 0 3px,transparent 3px 26px)}
+.mono{font-family:'JetBrains Mono',monospace}
+.pix{font-family:var(--pix)}
+
+.shell{background:var(--panel);border:5px solid var(--line2);border-radius:52px 52px 40px 40px;padding:26px 20px 20px;text-align:center;box-shadow:0 10px 0 rgba(42,35,32,.1)}
+.shell .screen{background:var(--lcd);border:4px solid rgba(58,74,50,.35);border-radius:24px;padding:20px 10px 14px;box-shadow:inset 0 5px 14px rgba(58,74,50,.22)}
+.shell .pe{font-size:88px;line-height:1.1}
+.shell .pn{font-family:var(--pix);font-size:15px;color:var(--lcdink);margin-top:12px}
+.shell .sq{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;margin-top:16px;color:var(--sub)}
+
+.c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 130px}
+.hd{font-family:var(--pix);font-size:26px;color:var(--pink);letter-spacing:.14em}
+h1{font-size:92px;font-weight:900;margin:26px 0 22px;letter-spacing:-.01em}
+.sub{font-size:34px;color:var(--sub);margin-bottom:60px}
+.order{display:flex;align-items:center;gap:26px;background:var(--panel);border:5px solid var(--line);border-radius:999px;padding:26px 50px;font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;box-shadow:0 10px 0 rgba(42,35,32,.09)}
+.order .k{font-family:var(--pix);font-size:20px;color:var(--sub)}
+.order .pinkb{background:var(--pink);color:#fff;border-radius:999px;padding:12px 30px}
+.msgs{display:flex;flex-direction:column;gap:38px;margin-top:64px;width:1760px}
+.m{display:flex;gap:28px;align-items:flex-start}
+.mav{width:110px;height:110px;border-radius:50%;background:var(--panel2);border:6px solid;display:flex;align-items:center;justify-content:center;font-size:60px;flex-shrink:0}
+.mb{position:relative;background:var(--panel);border:4px solid var(--line2);border-radius:8px 30px 30px 30px;padding:28px 36px;flex:1;box-shadow:0 8px 0 rgba(42,35,32,.07)}
+.mb .n{font-weight:800;font-size:30px}
+.mb .n span{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700;margin-left:14px}
+.mb p{font-size:32px;line-height:1.5;margin-top:10px;color:var(--ink)}
+.ok .n span{color:var(--mint)} .no .n span{color:var(--bear)}
+.wm{position:absolute;bottom:44px;right:70px;font-family:var(--pix);font-size:30px}
+.wm b{color:var(--pink)}
+
+.stage{width:2400px;height:1350px}</style></head><body><div class="stage">
+<div class="c"><div class="hd">WHISPERED ORDERS</div><h1>It obeys as often as it respects you.</h1>
+<div class="sub">breed stat = obedience %. every order is a dice roll against your relationship.</div>
+<div class="order"><span class="k">YOU WHISPER</span> <span class="pinkb">LONG $NVDA</span> <span style="color:var(--mut)">→</span> <span class="k">OBEY CHANCE</span> <span style="color:var(--mint)">breed + species</span></div>
+<div class="msgs">
+  <div class="m ok"><div class="mav" style="border-color:var(--gold)">🐕</div><div class="mb"><div class="n">REX <span>92% breed — OBEYED ✓</span></div>
+    <p>order received from the owner: long $NVDA. executing IMMEDIATELY. happy to help!!</p></div></div>
+  <div class="m no"><div class="mav" style="border-color:#c084fc">🐈</div><div class="mb"><div class="n">WHISKERS <span>14% breed — DEFIED ✗</span></div>
+    <p>an order? for ME? *slowly pushes the order off the table*</p></div></div>
+</div></div>
+<div class="wm">TA<b>ME</b></div>
+</div></body></html>

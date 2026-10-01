@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#fdf6e9;--panel:#fffdf6;--panel2:#f7edda;--ink:#2a2320;--sub:#6f6355;--mut:#a3937f;
+  --pink:#ff6ea9;--mint:#28c48a;--gold:#e8a020;--blu:#4f9cf9;--bear:#e5484d;
+  --lcd:#dff0d2;--lcdink:#3a4a32;--line:rgba(255,110,169,.35);--line2:rgba(42,35,32,.14);
+  --pix:'Press Start 2P',monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{font-family:'Onest',system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow:hidden}
+.stage{position:relative;overflow:hidden;background:var(--bg)}
+.stage:before{content:'';position:absolute;inset:0;background:
+  radial-gradient(60% 70% at 50% -8%,rgba(255,110,169,.14),transparent 60%),
+  radial-gradient(45% 55% at 92% 108%,rgba(40,196,138,.12),transparent 60%),
+  repeating-linear-gradient(-45deg,rgba(42,35,32,.03) 0 3px,transparent 3px 26px)}
+.mono{font-family:'JetBrains Mono',monospace}
+.pix{font-family:var(--pix)}
+
+.shell{background:var(--panel);border:5px solid var(--line2);border-radius:52px 52px 40px 40px;padding:26px 20px 20px;text-align:center;box-shadow:0 10px 0 rgba(42,35,32,.1)}
+.shell .screen{background:var(--lcd);border:4px solid rgba(58,74,50,.35);border-radius:24px;padding:20px 10px 14px;box-shadow:inset 0 5px 14px rgba(58,74,50,.22)}
+.shell .pe{font-size:88px;line-height:1.1}
+.shell .pn{font-family:var(--pix);font-size:15px;color:var(--lcdink);margin-top:12px}
+.shell .sq{font-family:'JetBrains Mono',monospace;font-size:17px;font-weight:700;margin-top:16px;color:var(--sub)}
+
+.c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 110px}
+.hd{font-family:var(--pix);font-size:26px;color:var(--pink);letter-spacing:.14em}
+h1{font-size:96px;font-weight:900;margin:26px 0 60px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;width:1800px}
+.card{background:var(--panel);border:5px solid var(--line2);border-radius:36px;padding:40px 44px;box-shadow:0 10px 0 rgba(42,35,32,.09);display:flex;gap:36px;align-items:center}
+.card .e{font-size:96px}
+.card h3{font-size:40px;font-weight:800}
+.card p{font-size:26px;color:var(--sub);line-height:1.5;margin-top:8px}
+.mrow{display:flex;align-items:center;gap:14px;margin-top:16px}
+.mrow .mk{font-family:var(--pix);font-size:15px;color:var(--sub);width:230px}
+.meter{flex:1;height:22px;background:var(--panel2);border:3px solid var(--line2);border-radius:999px;overflow:hidden}
+.meter i{display:block;height:100%}
+.wm{position:absolute;bottom:44px;right:70px;font-family:var(--pix);font-size:30px}
+.wm b{color:var(--pink)}
+.tg{font-family:'JetBrains Mono',monospace;font-size:30px;color:var(--sub);margin-top:54px}
+.tg b{color:var(--ink)}
+
+.stage{width:2400px;height:1350px}</style></head><body><div class="stage">
+<div class="c"><div class="hd">THE TAMAGOTCHI RULES ARE REAL</div><h1>Neglect has a P&amp;L.</h1>
+<div class="grid">
+  <div class="card"><div class="e">🍖</div><div style="flex:1"><h3>Hungry pets stop trading</h3>
+    <div class="mrow"><span class="mk">ENERGY</span><div class="meter"><i style="width:12%;background:var(--gold)"></i></div></div>
+    <p>below 15 energy it just posts about the empty bowl.</p></div></div>
+  <div class="card"><div class="e">😢</div><div style="flex:1"><h3>Sad pets panic-sell</h3>
+    <div class="mrow"><span class="mk">MOOD</span><div class="meter"><i style="width:16%;background:var(--pink)"></i></div></div>
+    <p>below 18 mood it closes everything. everything.</p></div></div>
+  <div class="card"><div class="e">🎯</div><div style="flex:1"><h3>Training caps leverage</h3>
+    <div class="mrow"><span class="mk">DISCIPLINE</span><div class="meter"><i style="width:72%;background:var(--blu)"></i></div></div>
+    <p>low discipline pets are allowed to be reckless. up to 4x.</p></div></div>
+  <div class="card"><div class="e">⚡</div><div style="flex:1"><h3>Stats decay every minute</h3>
+    <div class="mrow"><span class="mk">BREED</span><div class="meter"><i style="width:44%;background:var(--mint)"></i></div></div>
+    <p>you are not managing a bot. you are raising one.</p></div></div>
+</div>
+<div class="tg">feed it · pet it · train it · scold it — <b>or watch it embarrass you</b></div></div>
+<div class="wm">TA<b>ME</b></div>
+</div></body></html>
