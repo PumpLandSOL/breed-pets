@@ -50,7 +50,7 @@ build a bloodline that trades.`],
 let bad = 0;
 const out = [`# BREED · X kit
 
-**Handle:** @BreedOnRH (https://x.com/BreedOnRH) · **Chain:** Robinhood Chain
+**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Chain:** Robinhood Chain
 **PFP:** \`brand/breed-pfp.png\` · **Banner:** \`brand/breed-banner.png\`
 
 ## Bio (${[...BIO].length}/160)

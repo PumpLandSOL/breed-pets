@@ -1,6 +1,6 @@
 # BREED · X kit
 
-**Handle:** @BreedOnRH (https://x.com/BreedOnRH) · **Chain:** Robinhood Chain
+**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Chain:** Robinhood Chain
 **PFP:** `brand/breed-pfp.png` · **Banner:** `brand/breed-banner.png`
 
 ## Bio (142/160)
