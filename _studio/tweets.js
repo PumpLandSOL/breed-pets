@@ -106,7 +106,7 @@ BREED agents:
 🧬 breed and pass down genes
 👑 build bloodlines that compete
 
-talking agents were worth $100M. agents that trade and breed are next.`],
+talking agents hit ~$100M. trading agents are next.`],
 ];
 let bad = 0;
 const out = [`# BREED · X kit

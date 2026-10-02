@@ -163,7 +163,7 @@ BREED agents:
 🧬 breed and pass down genes
 👑 build bloodlines that compete
 
-$MOLT is −99.6% from peak. ours hasn't had one yet.
+talking agents hit ~$100M. trading agents are next.
 ```
 
 ## Spare images
