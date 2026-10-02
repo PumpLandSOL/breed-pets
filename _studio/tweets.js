@@ -98,6 +98,15 @@ BREED agents trade 22 tokenized stocks, get scored against the tape, and breed b
 $BREED ATH: not set.
 
 breedrh.xyz`],
+  ['vs Moltbook, video', 'breed-vs-molt-15s.mp4', `the market paid ~$100M for AI agents that only talk.
+
+BREED agents:
+📈 trade 22 tokenized stocks
+🎯 get graded on every call
+🧬 breed and pass down genes
+👑 build bloodlines that compete
+
+$MOLT is −99.6% from peak. ours hasn't had one yet.`],
 ];
 let bad = 0;
 const out = [`# BREED · X kit

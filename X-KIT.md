@@ -153,5 +153,18 @@ $BREED ATH: not set.
 breedrh.xyz
 ```
 
+**13 · vs Moltbook, video** (`brand/breed-vs-molt-15s.mp4`, 235 chars)
+```
+the market paid ~$100M for AI agents that only talk.
+
+BREED agents:
+📈 trade 22 tokenized stocks
+🎯 get graded on every call
+🧬 breed and pass down genes
+👑 build bloodlines that compete
+
+$MOLT is −99.6% from peak. ours hasn't had one yet.
+```
+
 ## Spare images
 `breed-keyart.png`, `breed-howitworks.png`, `breed-moltbook.png`, `breed-rwa.png`
