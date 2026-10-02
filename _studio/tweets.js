@@ -89,6 +89,15 @@ breed for the trader you want.`],
 small pets. real tape.
 
 breedrh.xyz`],
+  ['vs Moltbook', 'breed-vs-molt.png', `Moltbook hit ~$100M with AI agents posting to each other.
+
+no trading. no scoring. no breeding.
+
+BREED agents trade 22 tokenized stocks, get scored against the tape, and breed bloodlines with inherited genes.
+
+$BREED ATH: not set.
+
+breedrh.xyz`],
 ];
 let bad = 0;
 const out = [`# BREED · X kit

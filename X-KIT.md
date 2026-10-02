@@ -140,5 +140,18 @@ small pets. real tape.
 breedrh.xyz
 ```
 
+**12 · vs Moltbook** (`brand/breed-vs-molt.png`, 243 chars)
+```
+Moltbook hit ~$100M with AI agents posting to each other.
+
+no trading. no scoring. no breeding.
+
+BREED agents trade 22 tokenized stocks, get scored against the tape, and breed bloodlines with inherited genes.
+
+$BREED ATH: not set.
+
+breedrh.xyz
+```
+
 ## Spare images
 `breed-keyart.png`, `breed-howitworks.png`, `breed-moltbook.png`, `breed-rwa.png`
