@@ -192,6 +192,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,246,233,.93);backdro
     <button class="tab" data-v="mine">🥚 MY PETS</button>
     <button class="tab" data-v="callers">🎯 CALLERS</button>
     <button class="tab" data-v="rich">💰 BEST ROI</button>
+    <button class="tab" data-v="lines">🧬 BLOODLINES</button>
     <button class="tab" data-v="shelter">🏚 SHELTER</button>
   </div>
 
@@ -358,6 +359,16 @@ async function refreshFeed(){
     if(VIEW==='shelter'){
       $('feed').innerHTML=PETS.filter(p=>p.shelter).map((a,i)=>lbRow(a,a.hitRate!=null?a.hitRate+'%':'—',esc(a.blurb),null)).join('');
       return}
+    if(VIEW==='lines'){
+      const d=await api('/api/bloodlines');
+      $('feed').innerHTML='<div class="empty" style="padding:14px 0 6px">every family of pets, ranked by combined ROI across all generations. the #1 line wears the crown.</div>'+(d.lines.length?d.lines.map((l,i)=>'<div class="lb">'+
+        '<div class="rank'+(i===0?' gold':'')+'">'+(i===0?'👑':i+1)+'</div>'+
+        '<div class="lav" style="border-color:'+l.color+'" onclick="openProfile(\''+l.id+'\')">'+l.emoji+'</div>'+
+        '<div class="ln"><div class="a" onclick="openProfile(\''+l.id+'\')">'+esc(l.name)+(l.champion?' <span class="tagpill o" style="background:var(--gold);color:#fff">CHAMPION</span>':'')+'</div>'+
+        '<div class="b">G1→G'+l.maxGen+' · '+l.members+' pets · '+l.pets.map(p=>p.emoji+esc(p.name)).join(' ')+(l.hitRate!=null?' · '+l.hitRate+'% hit':'')+'</div></div>'+
+        '<div class="big">'+(l.roi>=0?'+':'')+l.roi.toFixed(1)+'%</div></div>').join('')
+        :'<div class="empty">no bloodlines yet. breed two pets in My Pets and start the first one.</div>');
+      return}
     if(VIEW==='callers'||VIEW==='rich'){
       const lb=await api('/api/leaderboard');const rows=VIEW==='callers'?lb.callers:lb.rich;
       $('feed').innerHTML=rows.length?rows.map((a,i)=>{
@@ -456,7 +467,7 @@ window.openProfile=async(id)=>{
     $('prof').innerHTML='<span class="x" onclick="closeModal()">×</span>'+
       '<div style="display:flex;gap:14px;align-items:center"><div class="pav" style="border-color:'+a.color+'">'+a.emoji+'</div>'+
       '<div><h3>'+esc(a.name)+' <span class="mono" style="font-size:11px;color:var(--mut)">'+a.label+' '+face(a)+'</span></h3>'+
-      '<div class="ph">'+esc(a.handle)+' · '+a.fans.toLocaleString()+' fans · '+(a.shelter?'shelter legend':'owned by '+short(a.owner))+(a.gen>1?' · <b style="color:var(--gold)">GEN '+a.gen+'</b> — child of '+esc(a.parents[0])+' × '+esc(a.parents[1]):'')+'</div></div></div>'+
+      '<div class="ph">'+esc(a.handle)+' · '+a.fans.toLocaleString()+' fans · '+(a.shelter?'shelter legend':'owned by '+short(a.owner))+(a.gen>1?' · <b style="color:var(--gold)">GEN '+a.gen+'</b> — child of '+esc(a.parents[0])+' × '+esc(a.parents[1]):'')+'</div>'+(a.line?'<div class="ph" style="margin-top:4px">🧬 <b>'+esc(a.line.name)+'</b> · #'+a.line.rank+' of the bloodlines · '+a.line.members+' pets'+(a.line.champion?' · 👑 <b style="color:var(--gold)">CHAMPION LINE</b>':'')+'</div>':'')+(a.children&&a.children.length?'<div class="ph" style="margin-top:4px">offspring: '+a.children.map(esc).join(', ')+'</div>':'')+'</div></div>'+
       '<div class="pbio">'+esc(a.blurb)+'</div>'+
       meter('MOOD',a.mood,'var(--pink)')+meter('ENERGY',a.energy,'var(--gold)')+meter('BREED',a.breed,'var(--mint)')+meter('DISCIPLINE',a.discipline,'var(--blu)')+
       '<div class="pstatgrid">'+

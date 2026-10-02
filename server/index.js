@@ -408,6 +408,26 @@ const CARE = {
 };
 
 // ---------- projections ----------
+// ---------- BLOODLINES: families across generations ----------
+let LINES = [], LINE_OF = {};
+function computeLines() {
+  const ids = Object.keys(db.pets), par = {}; ids.forEach((id) => { par[id] = id; });
+  const find = (x) => { while (par[x] !== x) { par[x] = par[par[x]]; x = par[x]; } return x; };
+  for (const id of ids) for (const pid of (db.pets[id].parents || [])) if (par[pid] != null) par[find(id)] = find(pid);
+  const groups = {}; for (const id of ids) (groups[find(id)] = groups[find(id)] || []).push(db.pets[id]);
+  const lines = Object.values(groups).filter((g) => g.length >= 3).map((g) => {   // a line starts when two pets have a child
+    const founder = g.slice().sort((x, y) => (x.gen || 1) - (y.gen || 1) || x.hatchedAt - y.hatchedAt)[0];
+    const eq = g.reduce((t, p) => t + equityOf(p), 0), fu = g.reduce((t, p) => t + (p.funded || 0), 0);
+    const hits = g.reduce((t, p) => t + p.calls.hits, 0), tot = g.reduce((t, p) => t + p.calls.total, 0);
+    return { id: founder.id, name: founder.name + ' LINE', emoji: SPECIES[founder.species].emoji, color: SPECIES[founder.species].color,
+      members: g.length, maxGen: Math.max(...g.map((p) => p.gen || 1)), equity: Math.round(eq), funded: fu, roi: fu ? (eq / fu - 1) * 100 : 0,
+      hitRate: tot ? Math.round(100 * hits / tot) : null, calls: tot, owners: [...new Set(g.map((p) => p.owner).filter(Boolean))].length,
+      pets: g.sort((x, y) => (x.gen || 1) - (y.gen || 1)).map((p) => ({ id: p.id, name: p.name, gen: p.gen || 1, emoji: SPECIES[p.species].emoji })) };
+  }).sort((x, y) => y.roi - x.roi || y.maxGen - x.maxGen || y.members - x.members);
+  lines.forEach((l, i) => { l.rank = i + 1; l.champion = i === 0; });
+  LINE_OF = {}; for (const l of lines) for (const p of l.pets) LINE_OF[p.id] = l; LINES = lines;
+}
+setInterval(computeLines, 30000); setTimeout(computeLines, 1000);
 function pubPet(p) {
   const sp = SPECIES[p.species];
   return { id: p.id, name: p.name, handle: handleOf(p), species: p.species, label: sp.label, emoji: sp.emoji, color: sp.color,
@@ -415,6 +435,8 @@ function pubPet(p) {
     mood: Math.round(p.mood), energy: Math.round(p.energy), breed: Math.round(p.breed), discipline: Math.round(p.discipline),
     obeyChance: clamp(Math.round(p.breed + G(p).obey), 5, 95),
     gen: p.gen || 1, parents: (p.parents || []).map((pid) => (db.pets[pid] ? db.pets[pid].name : '?')),
+    children: Object.values(db.pets).filter((c) => (c.parents || []).includes(p.id)).map((c) => c.name),
+    line: LINE_OF[p.id] ? { name: LINE_OF[p.id].name, rank: LINE_OF[p.id].rank, champion: LINE_OF[p.id].champion, members: LINE_OF[p.id].members } : null,
     genes: { lev: G(p).lev, sizeFrac: G(p).sizeFrac, cooldownS: G(p).cooldownS, obey: G(p).obey },
     breedReady: Math.max(0, ((p.breedAt || 0) + BREED_CD) - now()),
     equity: equityOf(p), funded: p.funded, usd: p.usd, trades: p.trades, wins: p.wins, losses: p.losses,
@@ -457,6 +479,7 @@ const server = http.createServer(async (req, res) => {
   if (p === '/api/mine') { const w = (u.searchParams.get('wallet') || '').toLowerCase(); if (!isEvm(w)) return json(res, 200, { pets: [] });
     return json(res, 200, { pets: ownedBy(w).map(pubPet) }); }
   if (p === '/api/markets') return json(res, 200, { markets: SYMS.map((s) => ({ sym: s, px: r6(MKT[s].px), chg5m: r2(MKT[s].chg5m || 0), chg30m: r2(MKT[s].chg30m || 0) })), trending: trending() });
+  if (p === '/api/bloodlines') { computeLines(); return json(res, 200, { lines: LINES.slice(0, 50).map((l) => ({ ...l, roi: r2(l.roi) })) }); }
   if (p === '/api/leaderboard') {
     const rows = db.order.map((id) => pubPet(db.pets[id]));
     return json(res, 200, {
