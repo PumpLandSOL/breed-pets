@@ -1,0 +1,41 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="_vbase.css">
+<style>
+.big{font-weight:900;font-size:96px;letter-spacing:-.03em;line-height:1.05}
+.node{position:absolute;width:118px;height:118px;border-radius:24px;background:#fffdf6;border:3px solid rgba(255,110,169,.45);display:grid;place-items:center;font-size:58px;box-shadow:0 6px 0 rgba(42,35,32,.08)}
+.node b{position:absolute;bottom:-30px;left:50%;transform:translateX(-50%);font-family:'Press Start 2P';font-size:11px;white-space:nowrap;color:#2a2320}
+.gen{position:absolute;left:70px;font-family:'Press Start 2P';font-size:14px;color:#ff6ea9}
+svg.ln{position:absolute;inset:0}
+.row{display:grid;grid-template-columns:60px 70px 1fr 160px;align-items:center;gap:16px;width:900px;padding:16px 22px;margin:0 auto 14px;text-align:left}
+.row .r{font-family:'Press Start 2P';font-size:18px;color:#a3937f}.row .e{font-size:42px}.row .n{font-weight:800;font-size:26px}.row .s{font-size:16px;color:#6f6355;margin-top:4px}.row .v{font-family:'JetBrains Mono';font-size:30px;font-weight:700;color:#28c48a;text-align:right}
+.champ{display:inline-block;background:#e8a020;color:#fff;font-family:'Press Start 2P';font-size:10px;padding:5px 8px;border-radius:99px;margin-left:10px;vertical-align:4px}
+</style><body><div class="bgp"></div><div class="blob" style="left:-220px;top:-220px;background:#ff6ea9"></div><div class="blob" style="right:-260px;bottom:-260px;background:#e8a020"></div>
+<div class="c" id="s1"><div><div class="pix" style="font-size:18px;color:#ff6ea9" id="k1">UPDATE 01</div><div class="big" style="margin-top:22px">🧬 Bloodlines</div><div style="font-size:28px;color:#6f6355;margin-top:18px">your pets have family now.</div></div></div>
+<div id="s2" style="position:absolute;inset:0"><svg class="ln" viewBox="0 0 1280 720"><g id="lines" stroke="#ff6ea9" stroke-width="4" fill="none" stroke-linecap="round"></g></svg>
+ <div class="gen" style="top:120px" id="g1l">GEN 1</div><div class="gen" style="top:330px" id="g2l">GEN 2</div><div class="gen" style="top:540px" id="g3l">GEN 3</div>
+ <div class="node" id="n0" style="left:400px;top:80px">🐕<b>ROCKET</b></div><div class="node" id="n1" style="left:760px;top:80px">🐈<b>LUNA</b></div>
+ <div class="node" id="n2" style="left:400px;top:290px">🐕<b>COMET</b></div><div class="node" id="n3" style="left:760px;top:290px">🦜<b>BLAZE</b></div>
+ <div class="node" id="n4" style="left:580px;top:500px">🐕<b>NOVA</b></div>
+ <div style="position:absolute;right:70px;top:300px;width:260px;font-size:22px;color:#6f6355;line-height:1.5" id="cap2">every child inherits a blend of both parents' genes, ±12% mutation.</div></div>
+<div class="c" id="s3"><div style="width:100%"><div style="font-size:44px;font-weight:900;margin-bottom:30px">Every family, <span class="p">ranked.</span></div>
+ <div class="card row" id="r0"><div class="r">👑</div><div class="e">🐕</div><div><div class="n">ROCKET LINE<span class="champ">CHAMPION</span></div><div class="s">G1→G3 · 5 pets · combined ROI across every generation</div></div><div class="v">#1</div></div>
+ <div class="card row" id="r1"><div class="r">2</div><div class="e">🐹</div><div><div class="n">NIBS LINE</div><div class="s">G1→G2 · 3 pets</div></div><div class="v">#2</div></div>
+ <div class="card row" id="r2"><div class="r">3</div><div class="e">🐢</div><div><div class="n">SHELLY LINE</div><div class="s">G1→G2 · 3 pets</div></div><div class="v">#3</div></div></div></div>
+<div class="c" id="s4"><div><div class="big">Build a bloodline<br><span class="m">that trades.</span></div></div></div>
+<div class="c" id="s5"><div><div class="pix" style="font-size:80px">BR<span class="p">EED</span></div><div style="font-size:28px;font-weight:700;margin-top:24px">🧬 Bloodlines are live.</div><div style="font-family:'JetBrains Mono';font-size:22px;color:#6f6355;margin-top:20px">breedrh.xyz · @BreedProtocolRH</div></div></div>
+<script>
+const $=(i)=>document.getElementById(i),cl=(x)=>Math.max(0,Math.min(1,x)),e=(x)=>1-Math.pow(1-cl(x),3),win=(t,a,b,f=.2)=>cl((t-a)/f)*cl((b-t)/f);
+const back=(x)=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const C=(i)=>{const n=$('n'+i);return [parseFloat(n.style.left)+59,parseFloat(n.style.top)+59]};
+const L=[[0,2,4.2],[1,2,4.2],[2,4,5.6],[3,4,5.6]];const els=L.map(([a,b])=>{const p=document.createElementNS('http://www.w3.org/2000/svg','path');const [x1,y1]=C(a),[x2,y2]=C(b);p.setAttribute('d',`M${x1} ${y1+59} C${x1} ${(y1+y2)/2+30} ${x2} ${(y1+y2)/2-30} ${x2} ${y2-59}`);p.setAttribute('pathLength','1');p.style.strokeDasharray=1;$('lines').appendChild(p);return p;});
+const APP=[3,3,4.5,4.5,6];
+window.__seek=(t)=>{
+  $('s1').style.opacity=win(t,0,2.6);$('s1').firstElementChild.style.transform=`scale(${.92+.08*e(t/.6)})`;
+  $('s2').style.opacity=win(t,2.6,7.4);
+  for(let i=0;i<5;i++){const p=back((t-APP[i])/.45);$('n'+i).style.transform=`scale(${p})`;$('n'+i).style.opacity=cl((t-APP[i])/.2);}
+  els.forEach((p,i)=>p.style.strokeDashoffset=1-e((t-L[i][2]+.6)/.5));
+  ['g1l','g2l','g3l'].forEach((id,i)=>$(id).style.opacity=e((t-[3,4.5,6][i])/.3));$('cap2').style.opacity=e((t-5)/.4);
+  $('s3').style.opacity=win(t,7.4,10.4);[0,1,2].forEach(i=>{const p=e((t-7.7-i*.25)/.4);$('r'+i).style.opacity=p;$('r'+i).style.transform=`translateY(${(1-p)*30}px)`;});
+  $('s4').style.opacity=win(t,10.4,12.2);
+  $('s5').style.opacity=e((t-12.2)/.4);
+};window.__seek(0);
+</script>

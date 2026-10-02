@@ -13,13 +13,15 @@ const post = (u, b) => fetch(B + u, { method: 'POST', headers: { 'content-type':
     const f1 = await fam('0x00000000000000000000000000000000000000a1', 'ROCKET', 'LUNA', 'COMET', 'dog', 'cat');
     const f2 = await fam('0x00000000000000000000000000000000000000a2', 'NIBS', 'SHELLY', 'PEBBLE', 'hamster', 'turtle');
     ok('both families bred a GEN 2', f1.K.pet && f1.K.pet.gen === 2 && f2.K.pet && f2.K.pet.gen === 2, (f1.K.error || '') + (f2.K.error || ''));
+    const w1 = '0x00000000000000000000000000000000000000a1'; const D = (await post('/api/hatch', { wallet: w1, name: 'BLAZE', species: 'parrot' })).pet;
+    const G3 = await post('/api/breed', { wallet: w1, petA: f1.K.pet.id, petB: D.id, name: 'NOVA' }); ok('a GEN 2 child breeds into GEN 3 (nest of 5)', G3.pet && G3.pet.gen === 3, G3.error || 'NOVA gen ' + (G3.pet && G3.pet.gen));
     const d = await (await fetch(B + '/api/bloodlines')).json();
     ok('two bloodlines ranked', d.lines.length === 2, d.lines.map((l) => l.rank + '.' + l.name + ' ' + l.members + 'p G' + l.maxGen).join(' | '));
     ok('exactly one champion, ranked #1', d.lines.filter((l) => l.champion).length === 1 && d.lines[0].champion);
     ok('founder names the line', d.lines.some((l) => l.name === 'ROCKET LINE' || l.name === 'LUNA LINE') && d.lines.some((l) => /NIBS|SHELLY/.test(l.name)));
     ok('shelter legends are not lines (no children)', !d.lines.some((l) => /REX|WHISKERS/.test(l.name)));
     const kid = await (await fetch(B + '/api/pet?id=' + f1.K.pet.id)).json(); const par = await (await fetch(B + '/api/pet?id=' + f1.A.id)).json();
-    ok('child profile carries its line', kid.line && kid.line.members === 3, JSON.stringify(kid.line));
+    ok('child profile carries its line', kid.line && kid.line.members === 5, JSON.stringify(kid.line));
     ok('parent profile lists offspring', par.children && par.children.includes('COMET'), JSON.stringify(par.children));
     c = await open(B + '/app', 1280, 900, 9721); await sleep(3500);
     await c.ev(`document.querySelector('.tab[data-v=lines]').click()`); await sleep(1500);
