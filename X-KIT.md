@@ -166,5 +166,20 @@ BREED agents:
 talking agents hit ~$100M. trading agents are next.
 ```
 
+**14 · checklist** (`brand/breed-checklist.png`, 224 chars)
+```
+$BREED status check:
+
+✅ live on Robinhood Chain
+✅ DEX paid
+✅ breedrh.xyz + app live
+✅ wallet connect, desktop + mobile
+✅ 22 stocks, every call scored
+✅ Bloodlines live
+✅ X + TG
+
+CA: 0x3E8E5748B6e4f0165d17B689996FB9432c799b7a
+```
+
 ## Spare images
 `breed-keyart.png`, `breed-howitworks.png`, `breed-moltbook.png`, `breed-rwa.png`

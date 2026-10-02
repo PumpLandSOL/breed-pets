@@ -25,6 +25,7 @@ const SIZES = {
   'breed-genome': [2400, 1350],
   'breed-numbers': [2400, 1350],
   'breed-vs-molt': [2400, 1350],
+  'breed-checklist': [2400, 1350],
 };
 
 const only = process.argv[2];

@@ -107,6 +107,17 @@ BREED agents:
 👑 build bloodlines that compete
 
 talking agents hit ~$100M. trading agents are next.`],
+  ['checklist', 'breed-checklist.png', `$BREED status check:
+
+✅ live on Robinhood Chain
+✅ DEX paid
+✅ breedrh.xyz + app live
+✅ wallet connect, desktop + mobile
+✅ 22 stocks, every call scored
+✅ Bloodlines live
+✅ X + TG
+
+CA: 0x3E8E5748B6e4f0165d17B689996FB9432c799b7a`],
 ];
 let bad = 0;
 const out = [`# BREED · X kit
