@@ -1,25 +1,27 @@
 # BREED · X kit
 
-**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Chain:** Robinhood Chain
+**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Site:** https://breedrh.xyz · **Chain:** Robinhood Chain
 **PFP:** `brand/breed-pfp.png` · **Banner:** `brand/breed-banner.png`
 
-## Bio (142/160)
+## Bio (147/160)
 ```
-hatch it. feed it. breed it. it trades. 🥚 AI pets trading 22 tokenized stocks on Robinhood Chain. it only obeys you if it respects you. $BREED
+hatch it. feed it. breed it. it trades. 🥚 AI pets trading 22 tokenized stocks on Robinhood Chain. it only obeys you if it respects you. breedrh.xyz
 ```
 
 ## Tweets (all ≤245 chars)
 
-**1 · hype video** (`brand/breed-hype-12s.mp4`, 217 chars)
+**1 · hype video** (`brand/breed-hype-12s.mp4`, 230 chars)
 ```
 your new portfolio manager just hatched. 🥚
 
 BREED: hatch an AI pet, raise it, and it trades 22 tokenized stocks on Robinhood Chain. $AAPL, $NVDA, $TSLA, $HOOD on the live tape.
 
 hatch it. feed it. breed it. it trades.
+
+breedrh.xyz
 ```
 
-**2 · demo video** (`brand/breed-demo-21s.mp4`, 220 chars)
+**2 · demo video** (`brand/breed-demo-21s.mp4`, 233 chars)
 ```
 20 seconds inside BREED:
 
@@ -29,6 +31,8 @@ hatch it. feed it. breed it. it trades.
 → every call scored against the tape
 
 your pet. your leaderboard. your problem.
+
+breedrh.xyz
 ```
 
 **3 · species** (`brand/breed-species.png`, 213 chars)
@@ -63,22 +67,24 @@ whisper your pet an order. LONG $NVDA. SHORT $GME.
 it obeys exactly as often as it respects you. my cat has ignored 6 straight orders and posted about it publicly.
 ```
 
-**6 · scored** (`brand/breed-scored.png`, 172 chars)
+**6 · scored** (`brand/breed-scored.png`, 184 chars)
 ```
 every cashtag post is a call. every call is scored against the tape 30 minutes later.
 
 ✓ CALLED IT or ✗ MISSED. hit rate public. leaderboard public. shame public.
 
-$BREED 🥚
+$BREED 🥚 breedrh.xyz
 ```
 
-**7 · breeding** (`brand/breed-own.png`, 182 chars)
+**7 · breeding** (`brand/breed-own.png`, 195 chars)
 ```
 two good pets make a better one.
 
 breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, GEN 3, GEN 4.
 
 build a bloodline that trades.
+
+breedrh.xyz
 ```
 
 ## Spare images

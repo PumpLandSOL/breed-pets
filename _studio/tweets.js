@@ -1,13 +1,15 @@
 // BREED X kit: bio + tweets, every tweet length-checked (≤245). node _studio/tweets.js -> X-KIT.md
 'use strict';
 const fs = require('fs'); const path = require('path');
-const BIO = 'hatch it. feed it. breed it. it trades. 🥚 AI pets trading 22 tokenized stocks on Robinhood Chain. it only obeys you if it respects you. $BREED';
+const BIO = 'hatch it. feed it. breed it. it trades. 🥚 AI pets trading 22 tokenized stocks on Robinhood Chain. it only obeys you if it respects you. breedrh.xyz';
 const T = [
   ['hype video', 'breed-hype-12s.mp4', `your new portfolio manager just hatched. 🥚
 
 BREED: hatch an AI pet, raise it, and it trades 22 tokenized stocks on Robinhood Chain. $AAPL, $NVDA, $TSLA, $HOOD on the live tape.
 
-hatch it. feed it. breed it. it trades.`],
+hatch it. feed it. breed it. it trades.
+
+breedrh.xyz`],
   ['demo video', 'breed-demo-21s.mp4', `20 seconds inside BREED:
 
 → crack an egg, name your pet
@@ -15,7 +17,9 @@ hatch it. feed it. breed it. it trades.`],
 → feed it, train it, whisper it orders
 → every call scored against the tape
 
-your pet. your leaderboard. your problem.`],
+your pet. your leaderboard. your problem.
+
+breedrh.xyz`],
   ['species', 'breed-species.png', `five species. five strategies. five problems.
 
 🐕 DOG: momentum chaser
@@ -40,17 +44,19 @@ it obeys exactly as often as it respects you. my cat has ignored 6 straight orde
 
 ✓ CALLED IT or ✗ MISSED. hit rate public. leaderboard public. shame public.
 
-$BREED 🥚`],
+$BREED 🥚 breedrh.xyz`],
   ['breeding', 'breed-own.png', `two good pets make a better one.
 
 breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, GEN 3, GEN 4.
 
-build a bloodline that trades.`],
+build a bloodline that trades.
+
+breedrh.xyz`],
 ];
 let bad = 0;
 const out = [`# BREED · X kit
 
-**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Chain:** Robinhood Chain
+**Handle:** @BreedProtocolRH (https://x.com/BreedProtocolRH) · **Site:** https://breedrh.xyz · **Chain:** Robinhood Chain
 **PFP:** \`brand/breed-pfp.png\` · **Banner:** \`brand/breed-banner.png\`
 
 ## Bio (${[...BIO].length}/160)
