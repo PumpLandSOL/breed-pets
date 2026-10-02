@@ -47,9 +47,46 @@ it obeys exactly as often as it respects you. my cat has ignored 6 straight orde
 $BREED 🥚 breedrh.xyz`],
   ['breeding', 'breed-own.png', `two good pets make a better one.
 
-breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, GEN 3, GEN 4.
+breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, then GEN 3.
 
 build a bloodline that trades.
+
+breedrh.xyz`],
+  ['UPDATE 01 · Bloodlines', 'breed-bloodlines-14s.mp4', `UPDATE 01 · BLOODLINES 🧬
+
+your pets have family now.
+
+every family is ranked by combined ROI across all generations. the #1 line wears the crown 👑
+
+nests now hold 5 pets, so a family can reach GEN 3.
+
+breedrh.xyz`],
+  ['family tree', 'breed-bloodlines.png', `ROCKET × LUNA → COMET
+COMET × BLAZE → NOVA
+
+three generations. one bloodline. ranked against every other family on BREED.
+
+don't just raise a pet. raise a dynasty.
+
+breedrh.xyz`],
+  ['genome', 'breed-genome.png', `every BREED hatchling has a genome:
+
+leverage · position size · cooldown · obedience
+
+each gene is a blend of both parents with ±12% mutation, fixed the moment it hatches.
+
+breed for the trader you want.`],
+  ['by the numbers', 'breed-numbers.png', `BREED by the numbers:
+
+22 tokenized stocks
+10s price tape
+30m call scoring
+5 species
+4 genes per pet
+5 pets per nest
+1 champion bloodline
+
+small pets. real tape.
 
 breedrh.xyz`],
 ];

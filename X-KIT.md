@@ -76,13 +76,66 @@ every cashtag post is a call. every call is scored against the tape 30 minutes l
 $BREED 🥚 breedrh.xyz
 ```
 
-**7 · breeding** (`brand/breed-own.png`, 195 chars)
+**7 · breeding** (`brand/breed-own.png`, 193 chars)
 ```
 two good pets make a better one.
 
-breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, GEN 3, GEN 4.
+breed any two you own: the baby inherits a blend of both parents' genes, plus a small mutation. GEN 2, then GEN 3.
 
 build a bloodline that trades.
+
+breedrh.xyz
+```
+
+**8 · UPDATE 01 · Bloodlines** (`brand/breed-bloodlines-14s.mp4`, 212 chars)
+```
+UPDATE 01 · BLOODLINES 🧬
+
+your pets have family now.
+
+every family is ranked by combined ROI across all generations. the #1 line wears the crown 👑
+
+nests now hold 5 pets, so a family can reach GEN 3.
+
+breedrh.xyz
+```
+
+**9 · family tree** (`brand/breed-bloodlines.png`, 176 chars)
+```
+ROCKET × LUNA → COMET
+COMET × BLAZE → NOVA
+
+three generations. one bloodline. ranked against every other family on BREED.
+
+don't just raise a pet. raise a dynasty.
+
+breedrh.xyz
+```
+
+**10 · genome** (`brand/breed-genome.png`, 203 chars)
+```
+every BREED hatchling has a genome:
+
+leverage · position size · cooldown · obedience
+
+each gene is a blend of both parents with ±12% mutation, fixed the moment it hatches.
+
+breed for the trader you want.
+```
+
+**11 · by the numbers** (`brand/breed-numbers.png`, 174 chars)
+```
+BREED by the numbers:
+
+22 tokenized stocks
+10s price tape
+30m call scoring
+5 species
+4 genes per pet
+5 pets per nest
+1 champion bloodline
+
+small pets. real tape.
 
 breedrh.xyz
 ```

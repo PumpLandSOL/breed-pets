@@ -21,6 +21,9 @@ const SIZES = {
   'breed-moltbook': [2400, 1350],
   'breed-rwa': [2400, 1350],
   'breed-own': [2400, 1350],
+  'breed-bloodlines': [2400, 1350],
+  'breed-genome': [2400, 1350],
+  'breed-numbers': [2400, 1350],
 };
 
 const only = process.argv[2];
